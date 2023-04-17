@@ -1,0 +1,71 @@
+#navbar-bg{
+  background-color: #161853;
+}
+
+#body-text-r{
+  color: #EC255A;
+  font-weight: bold;
+  text-shadow: 0px 3px 2px black;
+}
+
+#body-text-w{
+  color: #FAEDF0;
+  font-weight: bold;
+  text-shadow: 0px 3px 2px black;
+}
+
+#body-mains{
+  padding-top: 150px;
+  padding-bottom: 150px;
+  padding-left: 0px;
+  padding-right: 0px;
+}
+
+#about-body{
+  background-color: #161853;
+  height: 260px;
+  width: 800px;
+  font-weight: bold;
+  color: white;
+  white-space: nowrap;
+}
+
+#icon-skills{
+  height: 80px;
+  width: 80px;
+}
+
+@media (max-width: 0px){
+  #about-body{
+      font-size: 1px;
+      height: 16px;
+      width: 40px;
+  }
+}
+
+@media (max-width: 576px){
+  #about-body{
+      font-size: 7px;
+      height: 160px;
+      width: 400px;
+  }
+}
+
+@media (min-width: 576px){
+  #about-body{
+      font-size: 10px;
+  }
+}
+
+@media (min-width: 768px){
+  #about-body{
+      font-size: 12px;
+  }
+}
+
+@media (min-width: 992px){
+  #about-body{
+      font-size: 13px;
+  }
+
+}
