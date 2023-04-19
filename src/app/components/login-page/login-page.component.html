@@ -3,43 +3,42 @@
     <div class="container m-2 row">
         <div class="col-auto p-3">
             <h1 class="text-center">APP - ANDREY DEVS</h1>
-            <h6 class="text-center">INICIA SESIÓN CON TU CUENTA</h6>
-            <form class="pt-3">
-                <div class="form-group needs-validation" novalidate>
-                    <label>CORREO ELECTRONICO:</label>
+            <h6 class="text-center">LOGIN TO YOUR ACCOUNT</h6>
+            <form [formGroup]="formGroup" (ngSubmit)="onSubmitFormLogin()" class="pt-3">
+                <div class="form-group">
+                    <label for="emailUser">EMAIL:</label>
                     <div class="input-group mb-3">
                         <span class="input-group-text" id="inputGroup-sizing-default"><i class="fa-solid fa-envelope"></i></span>
-                        <input type="email" class="form-control" aria-label="Sizing example input" aria-describedby="inputGroup-sizing-default" required>
+                        <input id="emailUser" formControlName="emailUser" type="email" class="form-control" aria-label="Sizing example input" aria-describedby="inputGroup-sizing-default">
                     </div>
                 </div>
                 <div class="form-group">
-                    <label>CONTRASEÑA:</label>
+                    <label for="passwordUser">PASSWORD:</label>
                     <div class="input-group mb-3">
                         <span class="input-group-text" id="inputGroup-sizing-default"><i class="fa-solid fa-key"></i></span>
-                        <input type="password" class="form-control" aria-label="Sizing example input" aria-describedby="inputGroup-sizing-default" required>
+                        <input id="passwordUser" formControlName="passwordUser" type="password" class="form-control" aria-label="Sizing example input" aria-describedby="inputGroup-sizing-default">
                     </div>
                 </div>
                 <div class="form-group">
                     <div class="form-check form-switch my-2">
                         <div class="row">
                             <div class="col">
-                                <label>RECUERDAME</label>
+                                <label>KEEP ME LOGGED IN</label>
                                 <input type="checkbox" name="inputRemember" id="inputRemember" class="form-check-input">
                             </div>
                         </div>
-
                     </div>
                 </div>
                 <div class="d-grid text-center py-3">
-                    <button class="btn btn-primary btn-lg">INICIAR SESIÓN</button>
+                    <button class="btn btn-primary btn-lg" [disabled]="formGroup.invalid">LOGIN</button>
                 </div>
                 <div class="container text-center">
                     <div class="row">
                         <div class="col">
-                            <h6 class="text-end">¿NO TIENES CUENTA?</h6>
+                            <h6 class="text-start">NEED AN ACCOUNT?</h6>
                         </div>
                         <div class="col">
-                            <a class="text-start" [routerLink]="environmentRegister"><h6>REGISTRATE GRATIS</h6></a>
+                            <a class="text-end" [routerLink]="environmentRegister"><h6>REGISTER</h6></a>
                         </div>
                     </div>
                 </div>

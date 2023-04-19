@@ -1,12 +1,13 @@
-const url = "http://localhost:8081/";
+const url = "http://127.0.0.1:3000/";
 const path = 'V1/'
 
 export const enviroment = {
+  pathHome: '',
   pathLogin: path + 'login',
   pathRegister: path + 'register'
 };
 
 export const api = {
-  apiLogin: url + 'login',
-  apiRegister: url + 'register'
+  apiLogin: url + path + 'login',
+  apiRegister: url + path + 'register'
 };
