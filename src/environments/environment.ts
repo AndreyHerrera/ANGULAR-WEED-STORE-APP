@@ -4,7 +4,8 @@ const path = 'V1/'
 export const enviroment = {
   pathHome: '',
   pathLogin: path + 'login',
-  pathRegister: path + 'register'
+  pathRegister: path + 'register',
+  pathEmployee: path + 'employee'
 };
 
 export const api = {

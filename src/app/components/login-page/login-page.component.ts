@@ -41,7 +41,6 @@ export class LoginPageComponent {
         password: this.formGroup.value.passwordUser
       }
       this.loginService.loginUser(loginForm).subscribe((resp : any) => {
-        localStorage.setItem("AuthToken" , resp.AuthToken);
         if (resp.AuthToken === false){
           Swal.fire({
             icon: 'error',
@@ -50,7 +49,8 @@ export class LoginPageComponent {
           })
         }
         else{
-          this.router.navigateByUrl(enviroment.pathHome);
+          localStorage.setItem("AuthToken" , resp.AuthToken);
+          this.router.navigateByUrl(enviroment.pathEmployee);
         }
       }, () => {
         Swal.fire({
