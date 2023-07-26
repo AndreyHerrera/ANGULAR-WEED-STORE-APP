@@ -10,5 +10,6 @@ export const enviroment = {
 
 export const api = {
   apiLogin: url + path + 'login',
-  apiRegister: url + path + 'register'
+  apiRegister: url + path + 'register',
+  apiAuthToken: url + path + 'authToken'
 };

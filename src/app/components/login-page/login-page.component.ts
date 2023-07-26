@@ -14,7 +14,6 @@ import Swal from 'sweetalert2';
 export class LoginPageComponent {
   public environmentRegister : string;
   public formGroup !: FormGroup;
-  private token !: string;
 
   constructor(
     private readonly FormBuilder : FormBuilder,
@@ -41,12 +40,13 @@ export class LoginPageComponent {
         password: this.formGroup.value.passwordUser
       }
       this.loginService.loginUser(loginForm).subscribe((resp : any) => {
-        if (resp.AuthToken === false){
+        if (resp.AuthToken === 'false'){
           Swal.fire({
             icon: 'error',
             title: 'Oops...',
             text: 'Something went wrong!'
           })
+          localStorage.setItem("AuthToken" , resp.AuthToken);
         }
         else{
           localStorage.setItem("AuthToken" , resp.AuthToken);

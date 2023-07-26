@@ -21,6 +21,7 @@ export class RegisterPageComponent {
     private readonly registerService: RegisterService,
     private readonly router: Router
   ) {
+    localStorage.setItem("AuthToken" , "false");
     this.enviromentLogin = "/" + enviroment.pathLogin;
     this.formRegisterUser();
   }

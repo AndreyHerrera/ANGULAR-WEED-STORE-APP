@@ -11,6 +11,7 @@ export class HomePageComponent {
   public enviromentRegister : string;
 
   constructor(){
+    localStorage.setItem("AuthToken" , "false");
     this.enviromentLogin = "/" + enviroment.pathLogin;
     this.enviromentRegister = "/" + enviroment.pathRegister;
   }
