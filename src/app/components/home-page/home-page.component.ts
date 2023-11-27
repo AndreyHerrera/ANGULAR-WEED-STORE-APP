@@ -8,7 +8,16 @@ import { enviroment } from 'src/environments/environment';
   styleUrls: ['./home-page.component.scss'],
 })
 export class HomePageComponent implements OnInit, OnDestroy {
-  images: string[] = ['assets/image.png'];
+  images: string[] = [
+    'assets/info/image.png',
+    'assets/info/image1.png',
+    'assets/info/image2.png',
+    'assets/info/image3.png',
+    'assets/info/image4.png',
+    'assets/info/image5.png',
+    'assets/info/image6.png',
+    'assets/info/image7.png',
+  ];
   currentImageIndex = 0;
   imageNow: string | any;
   private intervalSubscription!: Subscription;
