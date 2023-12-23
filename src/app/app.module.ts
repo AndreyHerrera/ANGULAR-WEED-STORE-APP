@@ -10,6 +10,10 @@ import { RegisterPageComponent } from './components/register-page/register-page.
 import { HomePageComponent } from './components/home-page/home-page.component';
 import { HeaderComponent } from './shared/header/header.component';
 import { FooterComponent } from './shared/footer/footer.component';
+import { FeedComponent } from './components/home-page/feed/feed.component';
+import { ProductsComponent } from './components/home-page/products/products.component';
+import { AboutUsComponent } from './components/home-page/about-us/about-us.component';
+import { ContactComponent } from './components/home-page/contact/contact.component';
 
 @NgModule({
   declarations: [
@@ -19,6 +23,10 @@ import { FooterComponent } from './shared/footer/footer.component';
     HomePageComponent,
     HeaderComponent,
     FooterComponent,
+    FeedComponent,
+    ProductsComponent,
+    AboutUsComponent,
+    ContactComponent,
   ],
   imports: [
     BrowserModule,
