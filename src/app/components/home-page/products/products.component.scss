@@ -1,9 +1,11 @@
 .product {
+  margin-top: 25px;
   position: relative;
   width: 425px;
   height: 500px;
   border-radius: 22px;
   background-color: #d9d9d9;
+  margin: 0 auto;
 }
 
 .img-product {
@@ -47,6 +49,22 @@
 }
 
 .box-products {
+  display: grid;
+  padding: 0;
+  grid-gap: 25px;
+  justify-content: center;
   margin-bottom: 25px;
-  width: 1371px;
+  grid-template-columns: 1fr;
+}
+
+@media (min-width: 900px) {
+  .box-products {
+    grid-template-columns: repeat(2, 425px);
+  }
+}
+
+@media (min-width: 1280px) {
+  .box-products {
+    grid-template-columns: repeat(3, 425px);
+  }
 }
