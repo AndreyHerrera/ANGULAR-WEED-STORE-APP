@@ -8,7 +8,7 @@ import { enviroment } from 'src/environments/environment';
   styleUrls: ['./feed.component.scss'],
 })
 export class FeedComponent implements OnInit, OnDestroy {
-  imagess: string[] = [
+  images: string[] = [
     'assets/info/image.png',
     'assets/info/image1.png',
     'assets/info/image2.png',
@@ -19,7 +19,7 @@ export class FeedComponent implements OnInit, OnDestroy {
     'assets/info/image7.png',
   ];
 
-  images: string[] = ['assets/info/image.png'];
+  imagess: string[] = ['assets/info/image.png'];
   currentImageIndex = 0;
   imageNow: string | any;
   private intervalSubscription!: Subscription;
