@@ -18,6 +18,8 @@ export class FeedComponent implements OnInit, OnDestroy {
     'assets/info/image6.png',
     'assets/info/image7.png',
   ];
+
+  imagess: string[] = ['assets/info/image.png'];
   currentImageIndex = 0;
   imageNow: string | any;
   private intervalSubscription!: Subscription;
