@@ -1,6 +1,9 @@
 .info {
   height: 680px;
   width: 100%;
+  background-image: url("/assets/info/image.png");
+  background-size: cover;
+  background-position: center;
 }
 
 .img-now {
@@ -10,10 +13,6 @@
 }
 
 .text-imagen-div {
-  position: absolute;
-  top: 246px;
-  left: 178px;
-  z-index: 1;
   height: 344px;
   width: 1354px;
   background: rgba(217, 217, 217, 0.7);

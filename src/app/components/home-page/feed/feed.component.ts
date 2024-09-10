@@ -12,11 +12,11 @@ export class FeedComponent implements OnInit, OnDestroy {
     'assets/info/image.png',
     'assets/info/image1.png',
     'assets/info/image2.png',
-    'assets/info/image3.png',
-    'assets/info/image4.png',
-    'assets/info/image5.png',
-    'assets/info/image6.png',
-    'assets/info/image7.png',
+    // 'assets/info/image3.png',
+    // 'assets/info/image4.png',
+    // 'assets/info/image5.png',
+    // 'assets/info/image6.png',
+    // 'assets/info/image7.png',
   ];
 
   imagess: string[] = ['assets/info/image.png'];
